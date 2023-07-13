@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+}
+
 .header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between
+    justify-content:space-between;
 }
 
 .logo {
@@ -37,8 +41,10 @@
 
   .grid-square {
     aspect-ratio: 1/1;
-    border: .5px solid black;
+    border: .5px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  
