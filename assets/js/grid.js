@@ -21,8 +21,7 @@ function startGame() {
   // Aggiungi l'evento di click a ogni cella
   const gridSquares = document.querySelectorAll(".grid-square");
   for (let i = 0; i < gridSquares.length; i++) {
-    square.setAttribute("data-index", i);
-
+    gridSquares[i].setAttribute("data-index", i);
     gridSquares[i].addEventListener("click", (event) => {
       const index = event.target.getAttribute("data-index");
       revealCell(gridList, index);
